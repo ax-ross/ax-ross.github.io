@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <title>My Giro</title>
+</head>
+
+<body>
+
+  <!-- Header of Web-Page -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-around p-1 pb-0" id="navbarToggler">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-white.png" alt="" width="150rem">
+          </a>
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">
+                <img src="img/phone.png" alt="phone-icon" width="25rem"> +7 923 398 9013
+              </a>
+              <a class="nav-link active text-white" aria-current="page" href="#">
+                <img src="img/address.png" alt="phone-icon" width="25rem"> Москва, Набережная 2 оф. 142
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button type="button" class="btn btn-outline-light btn-lg">Заказать звонок</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Навигация -->
+    <!--  <nav class="navbar navbar-expand-lg navbar-light pt-0" style="background-color: #e3f2fd;">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav " style="width:100%;">
+            <li class="nav-item col-4 text-center">
+              <a class="nav-link active text-primary display-6" aria-current="page" href="#">
+                Список товаров
+              </a>
+            </li>
+            <li class="nav-item col-4 text-center">
+              <a class="nav-link active text-primary display-6" aria-current="page" href="#">
+                О компании
+              </a>
+            </li>
+            <li class="nav-item col-4 text-center">
+              <a class="nav-link active text-primary display-6" aria-current="page" href="#">
+                Полезная информация
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+  </header>
+
+
+
+  <!-- Out Advantage -->
+  <section>
+    <div class="container py-3">
+      <h2 class="text-center">Наши преимущества</h2>
+      <div class="row mt-5">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text-center d-flex justify-content-center">
+                <figure class="figure">
+                  <img src="img/advantages/1.png" alt="" width="60%">
+                  <figcaption class="figure-caption">
+                    <p>БОЛЬШОЙ АССОРТИМЕНТ</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-center d-flex justify-content-center">
+                <figure class="figure">
+                  <img src="img/advantages/2.png" alt="" width="60%">
+                  <figcaption class="figure-caption">
+                    <p>ОНЛАЙН-КОНСУЛЬТАНТ</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-center d-flex justify-content-center">
+                <figure class="figure">
+                  <img src="img/advantages/3.png" alt="" width="60%">
+                  <figcaption class="figure-caption">
+                    <p>ГАРАНТИЯ КАЧЕСТВА</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text-center d-flex justify-content-center">
+                <figure class="figure">
+                  <img src="img/advantages/4.png" alt="" width="60%">
+                  <figcaption class="figure-caption">
+                    <p>БЫСТРАЯ ДОСТАВКА</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next "></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+  </section>
+
+
+
+
+  <!-- Our Features -->
+  <section>
+    <div class="container py-3 features-of-giro">
+      <h2 class="text-center mt-3 text-white">Особенности гироскутеров</h2>
+      <div class="row justify-content-around ">
+        <div class="col-md-5  mt-4 my-features">
+          <ul class="list-group  ">
+            <p class="text-white my-feature-header"> <img src="img/minus.png" alt="">Недостатки</p>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="6-дюймовые колёса «самокатного» типа достаточно жёсткие – естественно, что они отрабатывают микропрофиль дороги хуже, чем классические колёса с покрышками. Но, за счёт того, что гироскутер может ехать по пешеходным дорожкам, минус этот минусом и не является: просто выбирайте путь с хорошим асфальтом, за пределами автодорог это достаточно просто сделать. Или сразу же выбирайте гироскутер с колесами 10 дюймов.">
+              Трясёт</li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="А зачем оно Вам, если поездка длится в среднем 10-15 минут? Гироскутер не предназначен для путешествий на дальние расстояния, его стихия – быстрые и короткие поездки.">
+              Нет сиденья</li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="Вот с этим ничего не поделать: гироскутер - это именно личное средство передвижения. Если Вам нужен транспорт для компании, выбирайте что-нибудь другое.">
+              Только для одного</li>
+          </ul>
+        </div>
+        <div class="col-md-7 mt-4 my-features">
+          <ul class="list-group">
+            <p class="text-white mb-0 my-feature-header"> <img src="img/plus.png" alt="">Достоинства</p>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="Он легко помещается и в специальный чехол, и в рюкзак, и в спортивную сумку – да его даже просто в руках нести удобно. Соответственно, проблема с парковкой решена раз и навсегда: добрались до места, убрали гироскутер в сумку и спокойно идёте дальше.">
+              Исключительная компактностью и небольшой вес</li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="Мини-сигвей и сам по себе стоит недорого, и обслуживания не требует, и бензин ему не нужен. Просто не забывайте ставить его на зарядку, и никаких проблем у Вас не будет.">
+              Экономичность</li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="На почти любой традиционный моторный транспорт нужны права, а на гироскутер – нет.">Доступность
+            </li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="Вы себе представляете поездку на мопеде через толпу людей, по тротуару? А на гироскутере – запросто. Юркая и компактная двухколёсная платформа быстро доставит Вас до места в любой час пик: где-то будет удобно ехать по тротуару, где-то – по обочине. В любом случае, Вы всегда сможете выбрать оптимально подходящий путь.">
+              Манёвренность</li>
+            <li class="my-feature text-light" data-toggle="tooltip" data-placement="right"
+              title="Чтобы научиться кататься на гироскутере взрослому человеку достаточно 10-15 минут. Купили, немного попрактиковались, и можно пользоваться!">
+              Простота в освоении</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Product-list -->
+
+  <section>
+    <div class="container py-3">
+      <h2 class="text-center mt-3">Список товаров</h2>
+      <ul class="nav nav-tabs d-flex justify-content-around" id="myTab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
+            role="tab" aria-controls="all" aria-selected="true">Все</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="giro-tab" data-bs-toggle="tab" data-bs-target="#giro" type="button" role="tab"
+            aria-controls="giro" aria-selected="false">Гироскутеры</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="electro-tab" data-bs-toggle="tab" data-bs-target="#electro" type="button"
+            role="tab" aria-controls="electro" aria-selected="false">Электросамокаты</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="seg-tab" data-bs-toggle="tab" data-bs-target="#seg" type="button" role="tab"
+            aria-controls="seg" aria-selected="false">Сигвеи</button>
+        </li>
+
+      </ul>
+      <div class="tab-content bg-white" id="myTabContent">
+
+
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="card border-light mt-3 product">
+              <img src="img/giroscooters/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Гироскутер Smart Balance 10 Красный</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>6500 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/giroscooters/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Гироскутер Smart Balance Premium 10 Цветные Молнии</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>10 990 р</strong></p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/giroscooters/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Гироскутер Smart Balance SUV Черная Молния 10.5" Premium PRO</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>8 590 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-light mt-3 product">
+              <img src="img/electric_scooters/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Xiaomi Mijia Electric Scooter m187 Black черный</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>20 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/electric_scooters/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Электросамокат KUGOO S4 (8800mAh)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>13 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/electric_scooters/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Электросамокат SUBOR D9 </h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>11 790 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-light mt-3 product">
+              <img src="img/segways/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini Pro Black (Черный)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>31 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/segways/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini Pro White (Белый)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong> 31 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mt-3 product">
+              <img src="img/segways/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini White (Белый)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>14 790 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="giro" role="tabpanel" aria-labelledby="giro-tab">
+          <div class="d-flex flex-wrap  justify-content-around">
+            <div class="card border-light product">
+              <img src="img/giroscooters/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Гироскутер Smart Balance 10 Красный</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>6500 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light product">
+              <img src="img/giroscooters/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Гироскутер Smart Balance Premium 10 Цветные Молнии</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>10 990 р</strong></p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light product">
+              <img src="img/giroscooters/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Гироскутер Smart Balance SUV Черная Молния 10.5" Premium PRO</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>8 590 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="electro" role="tabpanel" aria-labelledby="electro-tab">
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="card border-light product">
+              <img src="img/electric_scooters/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Xiaomi Mijia Electric Scooter m187 Black черный</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>20 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light product">
+              <img src="img/electric_scooters/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Электросамокат KUGOO S4 (8800mAh)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>13 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light product">
+              <img src="img/electric_scooters/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Электросамокат SUBOR D9 </h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>11 790 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="seg" role="tabpanel" aria-labelledby="seg-tab">
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="card border-light" style="width: 18rem;">
+              <img src="img/segways/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini Pro Black (Черный)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>31 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light" style="width: 18rem;">
+              <img src="img/segways/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini Pro White (Белый)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong> 31 480 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light" style="width: 18rem;">
+              <img src="img/segways/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column ">
+                <h5 class="card-title">Сигвей Xiaomi Ninebot mini White (Белый)</h5>
+                <div class="mt-auto text-end">
+                  <p class="card-text mb-1"> <strong>14 790 р</strong> </p>
+                  <a href="#" class="btn btn-primary mt-auto">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Our Consultans -->
+  <section>
+    <div class="container mb-5">
+      <div class="d-flex our-consultan-header align-items-center justify-content-center">
+        <h2 class="text-center my-5 text-white">Наши консультанты</h2>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="card  border-light consultant bg-transparent">
+          <img src="img/consultants/1.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Галина Петрова</h5>
+            <p class="card-text">менеджер по продажам</p>
+          </div>
+        </div>
+        <div class="card border-light consultant bg-transparent">
+          <img src="img/consultants/2.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Светлана Астахова </h5>
+            <p class="card-text">менеджер по продажам</p>
+          </div>
+        </div>
+        <div class="card border-light consultant bg-transparent">
+          <img src="img/consultants/3.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Иван Алексеев</h5>
+            <p class="card-text">менеджер по продажам</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Our Brands -->
+  <section>
+    <div class="container">
+      <h2 class="text-center my-3 brands-header">Бренды</h2>
+      <div class="row justify-content-around pb-5 pt-2">
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">XIAOMI</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">SMART</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">BALANCE</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">LINBOL</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">KUGOO</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">SUBOR</p>
+        </div>
+        <div class="col-lg-4 text-center mt-3">
+          <p class="h4">AIRWHEEL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Useful Info -->
+  <section>
+    <div class="container useful-info text-white">
+      <h2 class="text-center mb-5 pt-4">Полезная информация</h2>
+      <div class="card pb-3  bg-transparent">
+        <div class="row g-0 ms-5">
+          <div class="col-md-3 mx-0">
+            <img src="img/useful_info/1.jpg" class="img-fluid rounded-circle" alt="..." width="300px">
+          </div>
+          <div class="col-md-8  d-flex align-items-center">
+            <div class="card-body">
+              <h4 class="card-title">Как выбрать гироскутер? Советы перед покупкой</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pb-3 bg-transparent border-light text-end">
+        <div class="row g-0">
+
+          <div class="col-md-8  d-flex align-items-center">
+            <div class="card-body">
+              <h4 class="card-title ">Электросамокат. Какой лучше и как выбрать?</h5>
+            </div>
+          </div>
+          <div class="col-md-3 mx-0">
+            <img src="img/useful_info/2.jpg" class="img-fluid rounded-circle" alt="..." width="300px">
+          </div>
+        </div>
+      </div>
+
+      <div class="card pb-3  bg-transparent border-light">
+        <div class="row g-0 ms-5">
+          <div class="col-md-3 mx-0">
+            <img src="img/useful_info/3.jpg" class="img-fluid rounded-circle" alt="..." width="300px">
+          </div>
+          <div class="col-md-8  d-flex align-items-center">
+            <div class="card-body">
+              <h4 class="card-title ">Как выбрать сигвей? На что обратить внимание?</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pb-3  bg-transparent border-light text-end">
+        <div class="row g-0">
+
+          <div class="col-md-8  d-flex align-items-center">
+            <div class="card-body">
+              <h4 class="card-title">Советы по выбору гироскутера для ребенка.</h5>
+            </div>
+          </div>
+          <div class="col-md-3 mx-0">
+            <img src="img/useful_info/4.jpg" class="img-fluid rounded-circle" alt="..." width="300px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- About us -->
+  <section>
+    <div class="container pb-5 text-dark px-4 about-us">
+      <h2 class="text-center mt-3 mb-5">Краткая информация о компании</h2>
+      <p>
+        В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от известных
+        мировых производителей.
+      </p>
+      <p>
+        Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.
+        Купить гироскутер, электросамокат или сигвей недорого, Вы можете в нашем интернет-магазине в любое время, когда
+        Вам удобно.
+      </p>
+      <p>
+        Доставка заказов осуществляется бесплатно, в любую точку России.
+        Так же, вы можете заказать гироскутер, сигвей или электросамокат по низкой цене, позвонив нам.
+        Или сделайте заказ, пообщавшись с нашим онлайн-консультантом консультантам.
+        Продажа гироскутеров, электросамокатов и сигвеев, осуществляется напрямую, от производителей.
+        Поэтому, в нашем интернет-магазине самые лучшие цены.
+      </p>
+
+      <div class="d-flex justify-content-center my-5">
+        <div class="d-flex  align-items-center justify-content-center text-center contact-us-form">
+          <form>
+            <p class="h5 text-white">Подпишитесь на наши новости</p>
+            <div class="col-12 text-start text-white">
+              <label for="name" class="form-label mb-0">Имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Введите имя">
+            </div>
+            <div class="col-12 text-start text-white mt-2">
+              <label for="name" class="form-label mb-0">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Введите Email">
+            </div>
+            <div class="mt-4 d-grid gap-2 col-md-8 mx-auto">
+              <button type="submit" class="btn btn-primary mb-3 btn-outline-light">Подписаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer of Web-Page -->
+  <footer>
+
+    <div class="container">
+      <div class="row justify-content-between pt-2">
+        <div class="col-md-3 ps-5">
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">
+                <img src="img/phone.png" alt="phone-icon" width="25rem"> +7 923 398 9013
+              </a>
+              <a class="nav-link active text-white" aria-current="page" href="#">
+                <img src="img/address.png" alt="phone-icon" width="25rem"> Москва, Набережная 2 оф. 142
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-end">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-white.png" alt="" width="150rem">
+          </a>
+        </div>
+      </div>
+      <hr class="m-0 " style="border: 1px solid white;">
+
+      <div class="row mt-2 justify-content-between">
+        <div class="col-md-6 ps-5">
+          <p class="text-white">
+            Copyright © 2022 Все права защищены
+          </p>
+        </div>
+        <div class="col-md-5 text-end pb-3">
+          <img class="mx-2" src="img/social_icons/instagram.png" alt="" width="55rem">
+          <img class="mx-2" src="img/social_icons/vk.png" alt="" width="55rem">
+          <img class="mx-2" src="img/social_icons/youtube.png" alt="" width="55rem">
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+</body>
+
+</html>

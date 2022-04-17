@@ -1,0 +1,139 @@
+/* Header of Web-Page */
+.navbar {
+    background-color: #3D67B0;
+}
+
+
+/* Out Advantage */
+.figure-caption>p {
+    color: #3D67B0;
+    font-weight: 700;
+    font-size: 2vmin;
+}
+
+/* swiper */
+.swiper-button-next {
+    background-image: url(../img/slider/right.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.swiper-button-next::after {
+    content: none;
+}
+
+.swiper-button-prev {
+    background-image: url(../img/slider/left.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 5vmin;
+    height: 5vmin;
+
+}
+
+.swiper-button-prev::after {
+    content: none;
+}
+
+
+/* Out Features */
+.features-of-giro {
+    background: url('../img/first-page-bg.png');
+}
+
+.my-feature {
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.my-feature-header {
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 992px) {
+    .my-features {
+        padding-left: 13rem;
+    }
+}
+
+.btn-primary {
+    background-color: #3D67B0;
+    border-color: #3D67B0;
+}
+
+/* Product list */
+.product {
+    width: 18rem;
+}
+
+
+/* Our Consultants */
+.our-consultan-header {
+    background-image: url(../img/section-delimiter.png);
+    background-size: cover;
+    height: 23rem;
+}
+
+.consultant {
+    width: 18rem;
+    border: none;
+}
+
+.consultant>div>p {
+    color: #3D67B0;
+    font-weight: 700;
+}
+
+/* Our Brands */
+.brands-header {
+    color: #3D67B0;
+    font-weight: 700;
+}
+
+
+
+/* Useful Info */
+.useful-info {
+    background-color: #3D67B0;
+}
+
+.useful-info>.card {
+    border: none;
+}
+
+
+/* About Us */
+.about-us {
+    background: url(../img/about-us-bg.png), rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+.about-us>p {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.contact-us-form {
+    background-color: #3D67B0;
+    width: 50%;
+    height: 20rem;
+}
+
+.contact-us-form>form {
+    width: 65%;
+}
+
+form>div>.btn-primary {
+    border-color: rgb(29, 67, 134);
+    background-color: rgb(37, 78, 150);
+}
+
+/* Footer of Web-Page */
+footer {
+    background-color: #3D67B0;
+}
