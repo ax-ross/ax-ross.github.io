@@ -137,3 +137,8 @@ form>div>.btn-primary {
 footer {
     background-color: #3D67B0;
 }
+
+footer>.container>hr{
+    color: white; 
+    height: 1px;
+}
