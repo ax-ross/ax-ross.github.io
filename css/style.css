@@ -142,3 +142,19 @@ footer>.container>hr{
     color: white; 
     height: 1px;
 }
+
+
+/* Back to Top */
+#btn-go-up{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-size: cover;
+    background-color: #3D67B0;
+    border-color: rgb(29, 67, 134);
+    padding: 18px;
+    border-radius: 14px;
+  }
